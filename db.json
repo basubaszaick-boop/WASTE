@@ -1,0 +1,101 @@
+
+{
+  "schedules": [
+    {
+      "id": "SCH-001",
+      "barangay": "Poblacion",
+      "day": "Monday",
+      "time": "07:00",
+      "driver": "Juan Dela Cruz",
+      "vehicleId": "TRK-001",
+      "status": "Scheduled"
+    },
+    {
+      "id": "SCH-002",
+      "barangay": "Looc",
+      "day": "Tuesday",
+      "time": "08:00",
+      "driver": "Maria Santos",
+      "vehicleId": "TRK-002",
+      "status": "Scheduled"
+    },
+    {
+      "id": "SCH-003",
+      "barangay": "San Martin",
+      "day": "Wednesday",
+      "time": "07:30",
+      "driver": "Pedro Reyes",
+      "vehicleId": "TRK-001",
+      "status": "Delayed"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "TRK-001",
+      "plateNumber": "ABC-1234",
+      "type": "Compactor Truck",
+      "driver": "Juan Dela Cruz",
+      "status": "Active",
+      "notes": "Regular collection vehicle"
+    },
+    {
+      "id": "TRK-002",
+      "plateNumber": "XYZ-5678",
+      "type": "Dump Truck",
+      "driver": "Maria Santos",
+      "status": "Under Maintenance",
+      "notes": "Scheduled maintenance"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NTF-001",
+      "title": "Collection delay in San Martin",
+      "barangay": "San Martin",
+      "message": "Collection is delayed due to vehicle availability. Please keep waste secured until further notice.",
+      "date": "2026-10-24",
+      "type": "Delay"
+    }
+  ],
+  "readiness": [
+    {
+      "id": "RDY-001",
+      "barangay": "Poblacion",
+      "street": "Rizal Street",
+      "household": "Household 12",
+      "ready": true,
+      "updatedAt": "2026-10-24T07:00:00"
+    },
+    {
+      "id": "RDY-002",
+      "barangay": "Looc",
+      "street": "Mabini Street",
+      "household": "Household 08",
+      "ready": false,
+      "updatedAt": "2026-10-24T07:10:00"
+    }
+  ],
+  "collectionPoints": [
+    {
+      "id": "CP-001",
+      "barangay": "Poblacion",
+      "location": "Rizal Street",
+      "scheduleId": "SCH-001",
+      "completed": false
+    },
+    {
+      "id": "CP-002",
+      "barangay": "Poblacion",
+      "location": "Public Market",
+      "scheduleId": "SCH-001",
+      "completed": true
+    },
+    {
+      "id": "CP-003",
+      "barangay": "Looc",
+      "location": "Mabini Street",
+      "scheduleId": "SCH-002",
+      "completed": false
+    }
+  ]
+}
