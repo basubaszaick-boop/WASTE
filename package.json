@@ -2,13 +2,14 @@
   "name": "villanueva-waste-system",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:villanueva-waste-system": "node dist/villanueva-waste-system/server/server.mjs"
-  },
+  "ng": "ng",
+  "start": "ng serve",
+  "api": "json-server db.json --port 3000",
+  "build": "ng build",
+  "watch": "ng build --watch --configuration development",
+  "test": "ng test",
+  "serve:ssr:villanueva-waste-system": "node dist/villanueva-waste-system/server/server.mjs"
+},
   "private": true,
   "packageManager": "npm@11.19.1",
   "dependencies": {
